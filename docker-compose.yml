@@ -25,7 +25,7 @@ services:
         max-file: "3"
 
 configs:
-  social-ai-task-service:
+  social-ai-task-service-dev:
     external: true
 
 networks:
