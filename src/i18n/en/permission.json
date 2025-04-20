@@ -1,0 +1,6 @@
+{
+    "CREATE_PERMISSION_SUCCESSFULLY": "Permission created",
+    "PERMISSION_DELETE_SUCCESSFULLY": "Permission deleted",
+    "PERMISSION_NOT_EXIST": "Permission does not exist",
+    "SLUG_IS_EXISTED": "Slug is already in use"
+}

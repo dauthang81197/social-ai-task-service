@@ -1,0 +1,7 @@
+{
+    "CREATE_SUCCESSFULLY": "Organization Member added",
+    "UPDATE_SUCCESSFULLY": "Organization Member updated",
+    "DELETE_SUCCESSFULLY": "Organization Member deleted",
+    "CHANGE_STATUS_SUCCESSFULLY": "Change status successfully",
+    "IMPORT_SUCCESSFULLY": "Importing members finished"
+}

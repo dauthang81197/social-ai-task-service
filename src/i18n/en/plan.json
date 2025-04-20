@@ -1,0 +1,15 @@
+{
+    "DESCRIPTION_IS_REQUIRED": "Description is required",
+    "PLAN_IS_EXISTED": "Plan is already in use",
+    "PLAN_ADDED": "Plan Added",
+    "PLAN_UPDATED": "Plan Updated",
+    "PLAN_DELETED": "Plan Deleted",
+    "IMAGE_IS_REQUIRED": "Image is required",
+    "PLAN_NOT_EXIST": "Plan does not exist",
+    "PLAN_FREE": "This is a free plan that cannot be deleted",
+    "PLAN_NAME_EXITS": "Plan name already exists",
+    "INVALID_PRICING_PLAN_ID": "Invalid plan ID",
+    "PLAN_HAVE_SUBSCRIPTION": "There are signees in this plan",
+    "PLAN_IS_INACTIVE": "There plan is inactive",
+    "PLAN_NOT_ACCESS": "This plan is not for use by this organization"
+}

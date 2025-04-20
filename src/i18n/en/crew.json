@@ -1,0 +1,7 @@
+{
+  "CREATE_ADDED": "Crew added",
+  "CREW_EXITS": "Crew member already exists",
+  "UNASSIGN": "Crew member Unassigned",
+  "ASSIGN": "Crew member Assigned",
+  "CREW_MEMBER_EXITS": "Crew members do not have a CURRENT status at roll call"
+}

@@ -1,0 +1,10 @@
+{
+    "APPROVAL_COMPLETED": "Approval completed",
+    "REQUEST_DECLINED": "Request declined",
+    "STATUS_MAIL_RESENT": "Status Mail resent",
+    "REQUEST_NOT_EXIST": "Request does not exist",
+    "DESCRIPTION_IS_REQUIRED": "Description is required",
+    "REQUEST_EXIST": "This request has been approved or denied by an administrator",
+    "REQUEST_WITH_UNDER_REVIEW": "Your request still under reviewing, please try again later",
+    "REQUEST_IS_MISSING_INFO": "The request is missing information about the user and organization"
+}

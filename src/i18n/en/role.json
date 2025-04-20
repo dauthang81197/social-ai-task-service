@@ -1,0 +1,12 @@
+{
+  "CREATE_ROLE_SUCCESSFULLY": "Role added",
+  "ROLE_DELETE_SUCCESSFULLY": "Role deleted",
+  "ROLE_NOT_EXIST": "Role does not exist",
+  "SLUG_IS_EXISTED": "Slug is already in use",
+  "ROLE_IS_EXISTED": "Role is already in use",
+  "ROLE_UPDATED": "Role updated",
+  "ROLE_HAS_A_MEMBER": "This role has a member, please transfer it to another role",
+  "ROLE_DEFAULT": "Cannot delete this default role",
+  "CANNOT_CHANGE_USER_GROUP": "You cannot change the User group of an assigned role",
+  "THIS_ROLE_CANNOT_BE_INACTIVE": "You can not inactive organization admin account"
+}

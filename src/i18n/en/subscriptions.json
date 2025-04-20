@@ -1,0 +1,17 @@
+{
+    "SUBSCRIPTION_NOT_EXISTED": "The subscription do not exist",
+    "SUBSCRIPTION_CANCELED": "Subscription canceled",
+    "FREE_SUBSCRIPTIONS_CANNOT_BE_CANCELED": "Free subscription cannot be canceled",
+    "SUBSCRIPTION_IS_IN_USE": "Subscription is in use",
+    "RE_SUBSCRIPTION": "Re-subscribe successfully",
+    "CHANGE_PERIOD_TYPE_SUCCESSFULL": "Subscription updated successfully",
+    "CHANGE_PERIOD_TYPE_FAIL": "Subscription updated fail",
+    "NEW_PERIOD_TYPE_HAVE_DIFFERENT_OLD_PERIOD_TYPE": "The new period type must be different from the current period type",
+    "SUBSCRIPTION_PERIOD_INVALID": "Subscription period invalid",
+    "YOUR_SUBSCRIPTION_CAN_NOT_CHANGE": "Your subscription can't change to another",
+    "YOUR_SUBSCRIPTION_CAN_NOT_CHANGE_PERIOD": "Your subscription can't change period type",
+    "INVALID_PERIOD_TYPE": "Invalid subscription period",
+    "INVALID_ORGANIZATION_ID": "Invalid origanization id",
+    "INVALID_ORGANIZATION_ID_NOT_NEGATIVE": "Origanization id must be positive",
+    "CHANGE_PLAN_SUCCESSFULL": "Subscription updated"
+}

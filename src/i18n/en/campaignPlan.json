@@ -1,0 +1,13 @@
+{
+  "CAMPAIGN_PLAN_NOT_FOUND": "Campaign Plan not found",
+  "CAMPAIGN_PLAN_DELETED": "Campaign Plan Deleted",
+  "CAMPAIGN_PLAN_CAN_NOT_DELETE": "Unable to delete In Progress campaign plan.",
+  "CAMPAIGN_PLAN_CAN_NOT_UPDATE_STATUS": "Unable to update the status to a previous stage.",
+  "CAMPAIGN_PLAN_COMPLETED_CAN_NOT_UPDATE_STATUS": "Unable to update the status for a completed campaign plan.",
+  "CAMPAIGN_PLAN_UPDATED": "Campaign Plan Updated",
+  "CAMPAIGN_PLAN_CREATED": "Campaign Plan Added",
+  "NO_VALID_WORK_ORDERS_TO_ASSIGN": "No valid Work Orders to assign",
+  "WORK_ORDER_PERSONNEL_ALREADY_IN_PROGRESS": "Personnel and Work Order can only be assigned to one ‘In Progress’ Campaign.",
+  "NO_VALID_PERSONNEL_TO_ASSIGN": "No valid Personnels to assign"
+
+}

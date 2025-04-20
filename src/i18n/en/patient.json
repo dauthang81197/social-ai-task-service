@@ -1,0 +1,9 @@
+{
+    "PATIENT_ADDED": "Patient Added",
+    "PATIENT_UPDATED": "Patient Updated",
+    "PATIENT_DELETED": "Patient Deleted",
+    "IMAGE_IS_REQUIRED": "Image is required",
+    "PATIENT_NOT_EXIST": "Patient does not exist",
+    "TITLE_IS_REQUIRED": "Title is required",
+    "STATUS_EXPIRED": "Expiration status is not updated"
+}

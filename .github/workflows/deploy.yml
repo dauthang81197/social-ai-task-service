@@ -1,0 +1,92 @@
+name: CI/CD for NestJS Application
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run Lint
+        run: yarn lint
+
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build application
+        run: yarn build
+
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build Docker image
+        run: |
+          docker build --no-cache -t ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:${GITHUB_SHA::8} .
+          docker tag ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:${GITHUB_SHA::8} ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:latest
+
+      - name: Push Docker image to Docker Hub
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:latest
+        if: github.ref == 'refs/heads/develop' # Only push latest on develop
+      - name: Push Docker image with SHA tag
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:${GITHUB_SHA::8}
+        if: github.ref == 'refs/heads/develop' # Only push tagged image on develop
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/develop' # Only deploy on develop branch
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy docker-compose.yml to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "docker-compose.yml"
+          target: "/home/ec2-user/social-ai-task-service"
+
+      - name: SSH and deploy on EC2 (Docker Swarm)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+            cd /home/ec2-user/social-ai-task-service
+
+            docker pull ${{ secrets.DOCKER_USERNAME }}/social-ai-task-service:latest
+
+            docker stack deploy -c docker-compose.yml social-ai-task-service-stack

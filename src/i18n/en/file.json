@@ -1,0 +1,7 @@
+{
+  "INVALID_FILE_TYPE": "Invalid file type",
+  "INVALID_FILE_SIZE": "Invalid file size",
+  "FILE_IS_REQUIRED": "Please upload your organization's document to verify the identity",
+  "UPLOAD_SUCCCESSFULLY": "Upload successfully!",
+  "FILE_FORMAT": "File format is invalid"
+}

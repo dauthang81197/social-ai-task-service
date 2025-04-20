@@ -1,0 +1,9 @@
+{
+    "ANNOUNCEMENT_ADDED": "Announcement Added",
+    "ANNOUNCEMENT_UPDATED": "Announcement Updated",
+    "ANNOUNCEMENT_DELETED": "Announcement Deleted",
+    "IMAGE_IS_REQUIRED": "Image is required",
+    "ANNOUNCEMENT_NOT_EXIST": "Announcement does not exist",
+    "TITLE_IS_REQUIRED": "Title is required",
+    "STATUS_EXPIRED": "Expiration status is not updated"
+}

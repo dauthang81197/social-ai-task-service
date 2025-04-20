@@ -1,0 +1,10 @@
+{
+    "EMAIL_IS_EXISTED": "Email already exists",
+    "CREATE_ADMIN_STAFF_SUCCESSFULLY": "Admin Staff added",
+    "ADMIN_STAFF_NOT_FOUND": "Admin staff not found",
+    "UPDATE_ADMIN_STAFF_SUCCESSFULLY": "Admin Staff updated",
+    "ACTIVATE_ADMIN_STAFF_SUCCESSFULLY": "Admin Staff activated",
+    "DEACTIVATE_ADMIN_STAFF_SUCCESSFULLY": "Admin Staff deactivated",
+    "DELETE_ADMIN_STAFF_SUCCESSFULLY": "Admin Staff deleted",
+    "IMPORT_SUCCESSFULLY": "Importing admin staff finished"
+}

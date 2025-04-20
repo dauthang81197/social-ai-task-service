@@ -1,0 +1,9 @@
+{
+    "NOTIFICATION_ADDED": "Notification Added",
+    "NOTIFICATION_UPDATED": "Notification Updated",
+    "NOTIFICATION_DELETED": "Notification Deleted",
+    "IMAGE_IS_REQUIRED": "Image is required",
+    "NOTIFICATION_NOT_EXIST": "Notification does not exist",
+    "TITLE_IS_REQUIRED": "Title is required",
+    "STATUS_EXPIRED": "Expiration status is not updated"
+}
